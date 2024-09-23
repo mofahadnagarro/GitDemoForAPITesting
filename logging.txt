@@ -1,0 +1,115 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 15,
+    "name": "Test",
+    "phone_number": 1234,
+    "address": "Karol Bagh",
+    "website": "rahul",
+    "language": "English",
+    "location": {
+        "lat": 38.83,
+        "lng": 33.3456
+    },
+    "types": [
+        "shoe-park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 Sep 2024 07:24:28 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "f1f5cb417c5c55f31672f618a13c755a",
+    "scope": "APP",
+    "reference": "14b2e986801cf28d9f924ab265c28f3714b2e986801cf28d9f924ab265c28f37",
+    "id": "14b2e986801cf28d9f924ab265c28f37"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=f1f5cb417c5c55f31672f618a13c755a
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=f1f5cb417c5c55f31672f618a13c755a
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 23 Sep 2024 07:24:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "38.83",
+        "longitude": "33.3456"
+    },
+    "accuracy": "15",
+    "name": "Test",
+    "phone_number": "1234",
+    "address": "Karol Bagh",
+    "types": "shoe-park,shop",
+    "website": "rahul",
+    "language": "English"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "f1f5cb417c5c55f31672f618a13c755a"
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 Sep 2024 07:24:32 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
