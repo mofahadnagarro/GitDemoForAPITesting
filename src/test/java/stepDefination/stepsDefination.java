@@ -34,7 +34,7 @@ public class stepsDefination extends Utils {
 
 	@When("user callls {string} with {string} http request")
 	public void user_callls_with_http_request(String resource, String httpMethod) {
-//constructor in Enum class will be called once  we called valueOf(resource) method
+//constructor in Enum class will be called once  we called valueOf(resource) method.
 		APIResources resourceAPI=APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource());
 		
